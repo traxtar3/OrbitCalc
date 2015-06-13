@@ -46,22 +46,15 @@ class OrbitCalcGTK:
         self.window = self.builder.get_object("window1")
         self.window.show()
 
-        # the liststore
         self.liststore = gtk.ListStore(str)
         for k in sorted(cities.location.keys()):
-        # for k in sorted(sites.location.keys()):
             self.liststore.append([k])
-
-        # the combobox
         self.combobox = self.builder.get_object("combobox1")
         self.combobox.set_model(self.liststore)
         self.cell = gtk.CellRendererText()
         self.combobox.pack_start(self.cell, True)
         self.combobox.add_attribute(self.cell, 'text', 0)
         self.combobox.set_active(0)
-    #
-    # def los_use_current_time_selected(self, object):
-    #     print "toggle selected"
 
 
     def on_combobox1_changed(self, widget, data=None):
@@ -199,19 +192,13 @@ class OrbitCalcGTK:
     def on_los_kep_clicked(self, object, data=None):
         self.currenttime = self.builder.get_object("use_current_time")
 
-        # print self.builder.get_object("los_use_current_time_selected").get_toggled()
         if self.currenttime.get_active():
             timeset = str(datetime.utcnow())
         else:
             timeset =  str(self.builder.get_object("los_time").get_text())
-        # timeset = "2015-11-12 04:49:09"
+
         tle_line1 = str(self.builder.get_object("tle1").get_text())
         tle_line2 = str(self.builder.get_object("tle2").get_text())
-
-        # for testing:
-        # tle_line1 = ('1 25544U 98067A   15159.73191137  .00006600  00000-0  10229-3 0  9992')
-        # tle_line2 = ('2 25544  51.6431 126.2443 0004739  37.0689  24.1172 15.55345846946721')
-        # self.builder.get_object("textview1").get_buffer().set_text(tlekep.tlekep(tle_line1, tle_line2, timeset))
 
         line1err = ("The Two-Line Element (TLE) format was designed for punch cards and is\n"
             "therefore very strict about the position of every space and digit in a\n"

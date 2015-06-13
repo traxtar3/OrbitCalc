@@ -12,7 +12,7 @@ import time
 import datetime
 from dateutil.parser import parse
 
-
+# Use for testing
 # tle_line1 = ('1 25544U 98067A   15159.73191137  .00006600  00000-0  10229-3 0  9992')
 # tle_line2 = ('2 25544  51.6431 126.2443 0004739  37.0689  24.1172 15.55345846946721')
 # timeset = "2015-11-12 04:49:09"

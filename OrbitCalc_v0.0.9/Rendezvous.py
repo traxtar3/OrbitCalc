@@ -11,7 +11,6 @@ import datetime
 mu = 398600.000000000000000000000
 
 
-# noinspection PyPep8Naming
 def Rendezvous(RendezvousInterceptRadius, RendezvousTargetRadius, RendezvousAngularSeperation):
     intRad = RendezvousInterceptRadius + 0.0000000000
     targRad = RendezvousTargetRadius + 0.0000000000

@@ -13,51 +13,8 @@ from datetime import datetime
 from sgp4.earth_gravity import wgs84
 from sgp4.io import twoline2rv
 
-
-
-# r = [42164, 0, 0]
-# v = [0, 0, -3.0747]
-
-#r = [-26811.804312763237, -32974.87361092998, 2016.17279659361]
-#v = [2.3680716296404896, -1.933259141153603, -0.134203491989653]
-
-
-
-#
-#
-#
-# line1 = ('1 25544U 98067A   15159.73191137  .00006600  00000-0  10229-3 0  9992')
-# line2 = ('2 25544  51.6431 126.2443 0004739  37.0689  24.1172 15.55345846946721')
-#
-# satellite = twoline2rv(line1, line2, wgs84)
-# position, velocity = satellite.propagate(2015, 06, 12, 00, 00, 00)
-#
-# # print(satellite.error)    # nonzero on error
-# # 0
-# # print(satellite.error_message)
-# # None
-# print(position)
-# # (5576.056952..., -3999.371134..., -1521.957159...)
-# print(velocity)
-# # (4.772627..., 5.119817..., 4.275553...)
-# r = (position)
-# v = (velocity)
-
-
-
-
 undefined = None
 mu = 398600.000000
-
-# def RV2COE(rI_Input, rJ_Input, rK_Input, vI_Input, vJ_Input, vK_Input):
-#     rI = rI_Input + 0.000000000000000000000
-#     rJ = rJ_Input + 0.000000000000000000000
-#     rK = rK_Input + 0.000000000000000000000
-#     vI = vI_Input + 0.000000000000000000000
-#     vJ = vJ_Input + 0.000000000000000000000
-#     vK = vK_Input + 0.000000000000000000000
-#
-#
 
 
 def mag(x):
