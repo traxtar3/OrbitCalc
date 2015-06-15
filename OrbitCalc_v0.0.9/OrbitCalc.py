@@ -62,6 +62,7 @@ class OrbitCalcGTK:
         self.model = widget.get_model()
         self.item = self.model[self.index][0]
 
+
     def on_ComputeRV2COE_clicked(self, object, data=None):
         rI_Input = float(self.builder.get_object("rI").get_text())
         rJ_Input = float(self.builder.get_object("rJ").get_text())
@@ -161,7 +162,7 @@ class OrbitCalcGTK:
         site_selected = self.builder.get_object("combobox1").get_active_text()
         tle_line1 = str(self.builder.get_object("tle1").get_text())
         tle_line2 = str(self.builder.get_object("tle2").get_text())
-
+        self.currenttime = self.builder.get_object("use_current_time")
         if self.currenttime.get_active():
             timeset = str(datetime.utcnow())
         else:
