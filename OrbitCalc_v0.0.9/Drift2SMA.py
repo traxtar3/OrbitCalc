@@ -18,5 +18,5 @@ def Drift2SMA(Drift2SMArate):
     else:
         Drift2SMA_abvbel = "below"
     Drift2SMA_aDif = math.fabs(42164.154054 - Drift2SMA_a)
-    Drift2SMA_out = "Semi-Major Axis is %09.3f Km\n %09.3f km %s GEO" % (Drift2SMA_a, Drift2SMA_aDif, Drift2SMA_abvbel)
+    Drift2SMA_out = "Semi-Major Axis is %09.3f Km\n %.3f km %s GEO" % (Drift2SMA_a, Drift2SMA_aDif, Drift2SMA_abvbel)
     return Drift2SMA_out
