@@ -1,7 +1,7 @@
 
 Package of Python modules and a main class with GUI
 
-Instructions: Download all *.py files and place them in the same directory run $ python OrbitCalc.py
+Instructions: Download all files and place them in the same directory run $ python OrbitCalc.py
 
 Dependencies: Python 2.7 or higher
 
