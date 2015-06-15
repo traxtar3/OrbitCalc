@@ -1,6 +1,7 @@
 # Last Change 8 June 15
 
-location = {'London': ['51.5001524', '-0.1262362', 14.605533],  # United Kingdom
+location = {# 'Name: ['Latitude', 'Longitude', elevation (MSL)]
+            'London': ['51.5001524', '-0.1262362', 14.605533],  # United Kingdom
             'Paris': ['48.8566667', '2.3509871', 35.917042],  # France
             'New York': ['40.7143528', '-74.0059731', 9.775694],  # United States
             'Tokyo': ['35.6894875', '139.6917064', 37.145370],  # Japan
@@ -24,6 +25,7 @@ location = {'London': ['51.5001524', '-0.1262362', 14.605533],  # United Kingdom
             'Boston': ['42.3584308', '-71.0597732', 15.338848],  # United States
             'Caracas': ['10.491016', '-66.902061', 974.727417],  # Venezuela
             'Dallas': ['32.802955', '-96.769923', 154.140625],  # United States
+            "Denver": ['-104.9847000', '39.7391500', 1609.34],
             'Dusseldorf': ['51.2249429', '6.7756524', 43.204800],  # Germany
             'Geneva': ['46.2057645', '6.141593', 379.026245],  # Switzerland
             'Houston': ['29.7628844', '-95.3830615', 6.916622],  # United States
