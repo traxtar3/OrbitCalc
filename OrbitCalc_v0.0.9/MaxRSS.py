@@ -32,6 +32,4 @@ def MaxRSS(MaxRSSVehicleSemiMajorAxis, MaxRSSTargetSemiMajorAxis, MaxRSSLongitud
                   "\nVehicle 1 Cross Track Velocity @ node %1.5f m/s\nVehicle 2 Cross Track Velocity @ node %1.5f m/s"
                   "\nVehicle 1 Cross Track Velocity @ node %1.5f km/h\nVehicle 2 Cross Track Velocity @ node %1.5f km/h"
                   % (WorstRSS, BestRSS, SvVel_ms, TargtVel_ms, SvVel_kmh, TargtVel_kmh))
-
-    MaxRSS_out = ("Worst Case Max Distance: %.3f Km \nBest Case Max Distance: %.3f Km" % (WorstRSS, BestRSS))
     return MaxRSS_out
