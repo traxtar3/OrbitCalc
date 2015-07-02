@@ -38,7 +38,7 @@ class OrbitCalcGTK:
         gtk.main_quit()
 
     def __init__(self):
-        self.gladefile = "OrbitCalc_v3.glade"
+        self.gladefile = "OrbitCalc.glade"
         self.builder = gtk.Builder()
         self.builder.add_from_file(self.gladefile)
         self.builder.get_objects()
