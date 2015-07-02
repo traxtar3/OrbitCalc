@@ -33,7 +33,7 @@ Tab6: Collision Probability Given 2 assets' position and covariance matrix (erro
 
 Tab7: TLE Tools: Input a TLE and it will output the Keplerian Elements or Line-of-sight angles from a given site as well as footprint latitude/longitude (note: requires PyEphem)
 
-Things TODO: -change # of significant digits for some of the items -make the GUI more aesthetically pleasing
+Tab8: R&V Propagator: input R&V state vector, start time and end-time and it will propagate the orbit state to the given time
 
 Big thanks to Dave, Jake and Pat for all the help on my first big Python project!
 
